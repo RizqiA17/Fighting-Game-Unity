@@ -3008,7 +3008,7 @@ MonoBehaviour:
   enemyState: 0
   enemyFear: 0
   _playerManager: {fileID: 935732522}
-  minimumDistance: 15
+  minimumDistance: 6
   distanceToPlayer: 0
   cdChangeState: 0
   playerLayer:

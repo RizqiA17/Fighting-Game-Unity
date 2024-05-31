@@ -240,7 +240,7 @@ public class EnemyController : CharController
 
     void SmoothToIdle()
     {
-        if (currentSpeed > 0) currentSpeed -= Time.deltaTime;
+        if (currentSpeed > 0) currentSpeed = Mathf.Lerp(currentSpeed, 0f, 0.25f);
         else currentSpeed = 0;
     }
 
@@ -320,7 +320,6 @@ public class EnemyController : CharController
     void KeepDistanceToPlayer()
     {
         if (_playerManager._charControl.characterVelocity.x > 0) currentSpeed = -(Mathf.Lerp(currentSpeed, 1.0f, 0.25f));
-        else if (_playerManager._charControl.characterVelocity.x < 0) currentSpeed = Mathf.Lerp(currentSpeed, 1.0f, 0.25f);
 
         //if (currentSpeed < speed) currentSpeed = Mathf.Lerp(currentSpeed, 1.0f, 0.25f);
     }
