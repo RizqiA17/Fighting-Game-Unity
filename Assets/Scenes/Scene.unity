@@ -265,6 +265,10 @@ PrefabInstance:
       value: Hangar_v5_5 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1000011822669274, guid: 8632b7283e4ce284d8b8cd7c70d079f3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011822669274, guid: 8632b7283e4ce284d8b8cd7c70d079f3, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -600,11 +604,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -163066445757010894, guid: 66649ad92bc96b34599f65fd9bb28d40, type: 3}
   m_PrefabInstance: {fileID: 1737598280}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &390315691 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -6717046256055482953, guid: 66649ad92bc96b34599f65fd9bb28d40, type: 3}
-  m_PrefabInstance: {fileID: 1737598280}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &394386513 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3965564025493070724, guid: 66649ad92bc96b34599f65fd9bb28d40, type: 3}
@@ -811,7 +810,7 @@ GameObject:
   m_Component:
   - component: {fileID: 460658899}
   - component: {fileID: 460658900}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Invisible barier (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -999,6 +998,10 @@ PrefabInstance:
     - target: {fileID: 1000012270689622, guid: ef77372ba45b400439d547071a884266, type: 3}
       propertyPath: m_Name
       value: Industrial_pipe_v1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012270689622, guid: ef77372ba45b400439d547071a884266, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1000012270689622, guid: ef77372ba45b400439d547071a884266, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1413,6 +1416,10 @@ PrefabInstance:
       value: Road_set_v1_b_floor (24)
       objectReference: {fileID: 0}
     - target: {fileID: 1000010076631458, guid: d803e729730d97a4e89edf13b602b3f4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010076631458, guid: d803e729730d97a4e89edf13b602b3f4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -1659,6 +1666,10 @@ PrefabInstance:
     - target: {fileID: 1000010846400882, guid: b69a894e9ba3d9c40ac239743745cae4, type: 3}
       propertyPath: m_Name
       value: Hangar_v6_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010846400882, guid: b69a894e9ba3d9c40ac239743745cae4, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1000010846400882, guid: b69a894e9ba3d9c40ac239743745cae4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2109,6 +2120,10 @@ PrefabInstance:
       value: Road_set_v1_b_floor (10)
       objectReference: {fileID: 0}
     - target: {fileID: 1000010076631458, guid: d803e729730d97a4e89edf13b602b3f4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010076631458, guid: d803e729730d97a4e89edf13b602b3f4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -2362,7 +2377,7 @@ MonoBehaviour:
     m_Bits: 64
   enemy: {fileID: 25389963}
   speed: 3.5
-  jumpForce: 4.5
+  jumpForce: 4
   characterVelocity: {x: 0, y: 0, z: 0}
   headRigLooking: {fileID: 598064559}
   bodyRigLooking: {fileID: 1299959437}
@@ -2375,7 +2390,7 @@ MonoBehaviour:
   gravityForce: 9.8
   attackPoint:
   - {fileID: 437646040}
-  - {fileID: 1938218832}
+  - {fileID: 1264731061}
   attackRadius: 0.75
   minDamage: 50
   maxDamage: 100
@@ -2598,7 +2613,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 980348041}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Dynamic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2702,6 +2717,10 @@ PrefabInstance:
       value: Road_block_v1 (4)
       objectReference: {fileID: 0}
     - target: {fileID: 1000012744991898, guid: 36667f34d4b750c4695e409fb89b51f8, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012744991898, guid: 36667f34d4b750c4695e409fb89b51f8, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -2777,7 +2796,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1036251115}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2813,7 +2832,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1037977495}
   - component: {fileID: 1037977496}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Barirer Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2867,6 +2886,10 @@ PrefabInstance:
     - target: {fileID: 1000010076631458, guid: d803e729730d97a4e89edf13b602b3f4, type: 3}
       propertyPath: m_Name
       value: Road_set_v1_b_floor (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010076631458, guid: d803e729730d97a4e89edf13b602b3f4, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1000010076631458, guid: d803e729730d97a4e89edf13b602b3f4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2932,6 +2955,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2102179142}
     m_Modifications:
+    - target: {fileID: 1000012320623890, guid: 3220490e0e3e41547a4b49caf73f45dc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1000012320623890, guid: 3220490e0e3e41547a4b49caf73f45dc, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -2999,7 +3026,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1074814495}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Can Colllide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3034,6 +3061,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2102179142}
     m_Modifications:
+    - target: {fileID: 1000011822669274, guid: 8632b7283e4ce284d8b8cd7c70d079f3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1000011822669274, guid: 8632b7283e4ce284d8b8cd7c70d079f3, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -3405,6 +3436,7 @@ Transform:
   - {fileID: 25389963}
   - {fileID: 373246310}
   - {fileID: 2145787946}
+  - {fileID: 1836182872}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!143 &1365428034
@@ -3486,7 +3518,7 @@ MonoBehaviour:
     m_Bits: 256
   enemy: {fileID: 614146007}
   speed: 3.5
-  jumpForce: 4.5
+  jumpForce: 4
   characterVelocity: {x: 0, y: 0, z: 0}
   headRigLooking: {fileID: 1407396957}
   bodyRigLooking: {fileID: 447115392}
@@ -3499,7 +3531,7 @@ MonoBehaviour:
   gravityForce: 9.8
   attackPoint:
   - {fileID: 1179486735}
-  - {fileID: 390315691}
+  - {fileID: 1461276156}
   attackRadius: 0.75
   minDamage: 50
   maxDamage: 100
@@ -3512,9 +3544,11 @@ MonoBehaviour:
   enemyState: 0
   enemyFear: 0
   _playerManager: {fileID: 935732522}
+  backCheck: {fileID: 1836182872}
   minimumDistance: 6
   distanceToPlayer: 0
   cdChangeState: 0
+  state: 0
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -3558,7 +3592,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1374769311}
   - component: {fileID: 1374769312}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Invisible barier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3610,7 +3644,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1394798811}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3822,7 +3856,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1425103031}
   - component: {fileID: 1425103032}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Barirer Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4133,6 +4167,10 @@ PrefabInstance:
     - target: {fileID: 1000010076631458, guid: d803e729730d97a4e89edf13b602b3f4, type: 3}
       propertyPath: m_Name
       value: Road_set_v1_b_floor (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010076631458, guid: d803e729730d97a4e89edf13b602b3f4, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1000010076631458, guid: d803e729730d97a4e89edf13b602b3f4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4601,6 +4639,10 @@ PrefabInstance:
       value: Concrete_fence_v1_wall_set_v2 (9)
       objectReference: {fileID: 0}
     - target: {fileID: 1000012456564496, guid: 36b4cee33c5a95b4fa7f0ae6bdb49564, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012456564496, guid: 36b4cee33c5a95b4fa7f0ae6bdb49564, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -4669,6 +4711,10 @@ PrefabInstance:
     - target: {fileID: 1000012456564496, guid: 36b4cee33c5a95b4fa7f0ae6bdb49564, type: 3}
       propertyPath: m_Name
       value: Concrete_fence_v1_wall_set_v2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012456564496, guid: 36b4cee33c5a95b4fa7f0ae6bdb49564, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1000012456564496, guid: 36b4cee33c5a95b4fa7f0ae6bdb49564, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5034,6 +5080,10 @@ PrefabInstance:
       value: Concrete_fence_v1_wall_set_v2 (19)
       objectReference: {fileID: 0}
     - target: {fileID: 1000012456564496, guid: 36b4cee33c5a95b4fa7f0ae6bdb49564, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012456564496, guid: 36b4cee33c5a95b4fa7f0ae6bdb49564, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -5122,6 +5172,10 @@ PrefabInstance:
     - target: {fileID: 1000010076631458, guid: d803e729730d97a4e89edf13b602b3f4, type: 3}
       propertyPath: m_Name
       value: Road_set_v1_b_floor (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010076631458, guid: d803e729730d97a4e89edf13b602b3f4, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1000010076631458, guid: d803e729730d97a4e89edf13b602b3f4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5520,6 +5574,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Smoke_v1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012382359008, guid: 96a94de897daf7249a824fb908bb12a2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011954888186, guid: 96a94de897daf7249a824fb908bb12a2, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -5587,6 +5645,10 @@ PrefabInstance:
       value: Hangar_v6_1 (7)
       objectReference: {fileID: 0}
     - target: {fileID: 1000010846400882, guid: b69a894e9ba3d9c40ac239743745cae4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010846400882, guid: b69a894e9ba3d9c40ac239743745cae4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -5647,6 +5709,10 @@ PrefabInstance:
     - target: {fileID: 1000012744991898, guid: 36667f34d4b750c4695e409fb89b51f8, type: 3}
       propertyPath: m_Name
       value: Road_block_v1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012744991898, guid: 36667f34d4b750c4695e409fb89b51f8, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1000012744991898, guid: 36667f34d4b750c4695e409fb89b51f8, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5715,6 +5781,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000012564366324, guid: 36667f34d4b750c4695e409fb89b51f8, type: 3}
   m_PrefabInstance: {fileID: 1808963798}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1836182871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1836182872}
+  m_Layer: 6
+  m_Name: Back Check
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1836182872
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836182871}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 1, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1365428033}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1883080837
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5930,6 +6027,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2102179142}
     m_Modifications:
+    - target: {fileID: 1000011822669274, guid: 8632b7283e4ce284d8b8cd7c70d079f3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1000011822669274, guid: 8632b7283e4ce284d8b8cd7c70d079f3, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -6417,11 +6518,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 614146015}
   m_SourcePrefab: {fileID: 100100000, guid: 66649ad92bc96b34599f65fd9bb28d40, type: 3}
---- !u!4 &1938218832 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -6717046256055482953, guid: 66649ad92bc96b34599f65fd9bb28d40, type: 3}
-  m_PrefabInstance: {fileID: 1938218831}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1940621149
 GameObject:
   m_ObjectHideFlags: 0
@@ -6432,7 +6528,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1940621150}
   - component: {fileID: 1940621151}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Directional Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6547,6 +6643,10 @@ PrefabInstance:
     - target: {fileID: 1000012456564496, guid: 36b4cee33c5a95b4fa7f0ae6bdb49564, type: 3}
       propertyPath: m_Name
       value: Concrete_fence_v1_wall_set_v2 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012456564496, guid: 36b4cee33c5a95b4fa7f0ae6bdb49564, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1000012456564496, guid: 36b4cee33c5a95b4fa7f0ae6bdb49564, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -6992,7 +7092,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2102179142}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Static
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7048,7 +7148,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2127780725}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}

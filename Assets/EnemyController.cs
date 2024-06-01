@@ -22,13 +22,14 @@ public class EnemyController : CharController
     [SerializeField] private ENEMY_STATE enemyState;
     [SerializeField] private ENEMY_FEAR enemyFear;
     [SerializeField] private CharManager _playerManager;
+    [SerializeField] private Transform backCheck;
     [SerializeField] private float minimumDistance;
     [SerializeField] private float distanceToPlayer;
     [SerializeField] private float cdChangeState;
     private float currentSpeed;
     [Range(0, 100)]
     private int fearPoint;
-    private int state;
+    [SerializeField] private int state;
     private int minFear, minNormal;
 
     [Header("Enemy Attack")]
@@ -86,7 +87,7 @@ public class EnemyController : CharController
         _charManager._charAnim.anim.SetBool(_charManager._charAnim.ISDUCKING_PARAM, isDucking);
         _charManager._charAnim.anim.SetBool(_charManager._charAnim.BLOCK_PARAM, isBlocking);
 
-        if(isStable) _charManager._changeCharacterAttackState.isPlayed = false;
+        if (isStable) _charManager._changeCharacterAttackState.isPlayed = false;
 
         if (_charManager._charControl.IsGrounded())
         {
@@ -131,9 +132,6 @@ public class EnemyController : CharController
                 break;
         }
 
-        //if (currentSpeed > 0) currentSpeed -= Time.deltaTime;
-        //else if (currentSpeed <= 0) currentSpeed = 0;
-
         ChangeFearPoint();
         Attackable();
     }
@@ -147,13 +145,14 @@ public class EnemyController : CharController
             //print(state);
             cdChangeState = Random.Range(0, 5);
         }
-        if (state >= 1)
-        {
-            CasePlayer();
-        }
-        else if (state >= 4)
+
+        if (state > 4)
         {
             RunFromPlayer();
+        }
+        else if (state >= 1)
+        {
+            CasePlayer();
         }
         else
         {
@@ -174,13 +173,14 @@ public class EnemyController : CharController
             //print(state);
             cdChangeState = Random.Range(0, 5);
         }
-        if (state > 2)
-        {
-            CasePlayer();
-        }
-        if (state > 0)
+
+        if (state > 3)
         {
             RunFromPlayer();
+        }
+        else if (state > 1)
+        {
+            CasePlayer();
         }
         else
         {
@@ -202,13 +202,14 @@ public class EnemyController : CharController
             //print(state);
             cdChangeState = Random.Range(0, 5);
         }
-        if (state > 3)
-        {
-            CasePlayer();
-        }
-        if (state >= 2)
+
+        if (state > 2)
         {
             RunFromPlayer();
+        }
+        else if (state > 1)
+        {
+            CasePlayer();
         }
         else
         {
@@ -231,11 +232,8 @@ public class EnemyController : CharController
 
     void RunFromPlayer()
     {
-        if (!Physics.CheckSphere(transform.position, attackRange, playerLayer))
-        {
-            if (currentSpeed > speed) currentSpeed = -(Mathf.Lerp(currentSpeed, 1.0f, 0.25f));
-        }
-        else SmoothToIdle();
+        if (currentSpeed > -speed && !BackChecking()) currentSpeed = Mathf.Lerp(currentSpeed, -1.0f, 0.25f);
+        else currentSpeed = Mathf.Lerp(currentSpeed, 0f, 25f);
     }
 
     void SmoothToIdle()
@@ -268,7 +266,7 @@ public class EnemyController : CharController
         if (enemyRasioAttack <= rasioAttack) rasioPoint = 3;
         else rasioPoint = -3;
 
-        if (chainPoint <= attackChain) chainPoint = 4;
+        if (enemyChainAttack <= attackChain) chainPoint = 4;
         else chainPoint = 4;
 
         fearPoint = (healthPoint + attackPoint + rasioPoint + 10) * 5;
@@ -316,10 +314,15 @@ public class EnemyController : CharController
         return Vector2.Distance(enemy.position, transform.position) <= minimumDistance;
     }
 
+    bool BackChecking()
+    {
+        return Physics.CheckSphere(backCheck.position, .5f, LayerMask.NameToLayer("Ground"));
+    }
+
     // Menjaga jarak agar tidak terlalu jauh
     void KeepDistanceToPlayer()
     {
-        if (_playerManager._charControl.characterVelocity.x > 0) currentSpeed = -(Mathf.Lerp(currentSpeed, 1.0f, 0.25f));
+        if (_playerManager._charControl.characterVelocity.x > 0) currentSpeed = (Mathf.Lerp(currentSpeed, 1.0f, 0.25f));
 
         //if (currentSpeed < speed) currentSpeed = Mathf.Lerp(currentSpeed, 1.0f, 0.25f);
     }
