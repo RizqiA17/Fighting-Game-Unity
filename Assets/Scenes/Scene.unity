@@ -2398,7 +2398,7 @@ MonoBehaviour:
   rasioAttack: 0
   attackSuccess: 0
   attackChain: 0
-  characterControllerHeightOnDucking: 1.25
+  characterControllerHeightOnDucking: 1
   characterControllerYOffset: 0.75
 --- !u!143 &935732519
 CharacterController:
@@ -3539,7 +3539,7 @@ MonoBehaviour:
   rasioAttack: 0
   attackSuccess: 0
   attackChain: 0
-  characterControllerHeightOnDucking: 1.25
+  characterControllerHeightOnDucking: 1
   characterControllerYOffset: 0.75
   enemyState: 0
   enemyFear: 0
