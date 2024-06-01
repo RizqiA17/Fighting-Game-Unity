@@ -7,8 +7,14 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private CharController player;
+    [SerializeField] private Health playerHealth;
     [SerializeField] private CharController enemy;
-    public TextMeshProUGUI countDownText;
+    [SerializeField] private Health enemyHealth;
+    [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private TextMeshProUGUI gameCondition;
+    [SerializeField] private TextMeshProUGUI countDownText;
+    [SerializeField] private TextMeshProUGUI totalAttack;
+    [SerializeField] private TextMeshProUGUI attackSuccess;
     float countDown;
     float timer = 3;
     //public TextMeshProUGUI rankText;
@@ -39,5 +45,17 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(4f);
         player.enabled = true;
         enemy.enabled = true;
+    }
+
+    public void EndGame()
+    {
+        if (playerHealth.CurrentHealth > enemyHealth.CurrentHealth) gameCondition.text = "<color=green>You Win</color>";
+        else if (playerHealth.CurrentHealth < enemyHealth.CurrentHealth) gameCondition.text = "<color=red>You Lose</color>";
+        else if (playerHealth.CurrentHealth == enemyHealth.CurrentHealth) gameCondition.text = "<color=yellow>Draw</color>";
+        totalAttack.text = "Total Attack = " + player.totalAttack;
+        attackSuccess.text = "Attack Success = " + player.attackSuccess;
+        gameOverPanel.SetActive(true);
+        player.enabled = false;
+        enemy.enabled = false;
     }
 }

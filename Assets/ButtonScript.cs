@@ -42,6 +42,7 @@ public class ButtonScript : MonoBehaviour
     IEnumerator DisableParrent()
     {
         yield return new WaitForSeconds(.5f);
+        GetComponent<Button>().interactable = true;
         parrentPanel.SetActive(false);
         targetPanel.GetComponentInChildren<ButtonScript>().OpenPanel();
     }

@@ -11,6 +11,7 @@ public class Health : MonoBehaviour
     [SerializeField] protected float maxHealth;
     [SerializeField] protected TextMeshProUGUI tmp;
     [SerializeField] protected Slider slider;
+    [SerializeField] protected GameManager _gameManger;
     private bool isDead;
     public float CurrentHealth
     {
@@ -41,7 +42,7 @@ public class Health : MonoBehaviour
             {
                 CurrentHealth -= damage;
                 _charManager._charControl.attackChain = 0;
-
+                _charManager._charAnim.anim.CrossFade(_charManager._charAnim.GET_DAMAGE, .1f);
                 //_charManager._charAnim.anim.SetTrigger(_charManager._charAnim.SET_EMPTY_TRIGGER);
                 //_charManager._changeCharacterAttackState.isPlayed = false;
                 //_charManager._charControl.isAttacking = false;
@@ -62,7 +63,7 @@ public class Health : MonoBehaviour
 
     public virtual void Dead()
     {
-
+        _gameManger.EndGame();
     }
 
     public virtual void Blocking()

@@ -41,7 +41,7 @@ public class CharController : MonoBehaviour
     [SerializeField] protected Transform[] attackPoint; // Posisi Serangan
     [SerializeField] protected float attackRadius; // Radius Serangan
     [SerializeField] protected int minDamage, maxDamage; // Set minmax Damage
-    protected float totalAttack;
+    public float totalAttack;
     public float rasioAttack;
     public float attackSuccess;
     public int attackChain;
@@ -182,7 +182,7 @@ public class CharController : MonoBehaviour
         }
         else
         {
-            attackSuccess = 0;
+            attackChain= 0;
         }
         setRasioAttack();
     }

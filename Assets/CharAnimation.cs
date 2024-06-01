@@ -14,6 +14,7 @@ public class CharAnimation : MonoBehaviour
     public readonly string JUMP = "Lompat Revisi";
     public readonly string DEAD_PARAM = "Dead";
     public readonly string SET_EMPTY_TRIGGER = "SetEmpty";
+    public readonly string GET_DAMAGE = "Get Hit";
     [HideInInspector] public Animator anim;
     // Start is called before the first frame update
     void Start()
