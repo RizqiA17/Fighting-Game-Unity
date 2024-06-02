@@ -851,8 +851,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.9436092, y: 1, z: 1}
+  m_Center: {x: 0.97180516, y: 0, z: 0}
 --- !u!1 &491436384
 GameObject:
   m_ObjectHideFlags: 0
@@ -3543,6 +3543,9 @@ MonoBehaviour:
   characterControllerYOffset: 0.75
   enemyState: 0
   enemyFear: 0
+  terrainLayer:
+    serializedVersion: 2
+    m_Bits: 8
   _playerManager: {fileID: 935732522}
   backCheck: {fileID: 1836182872}
   minimumDistance: 6

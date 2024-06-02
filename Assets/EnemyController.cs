@@ -76,6 +76,7 @@ public class EnemyController : CharController
             SetCharStable(); // Panggil set stabil player
             attackCd -= Time.deltaTime; // Hitung mundur serangan
         }
+        print(BackChecking());
     }
 
     void CharacterMovement()
@@ -211,12 +212,15 @@ public class EnemyController : CharController
     // Menjauh dari player
     void RunFromPlayer()
     {
-        if (currentSpeed > -speed && !BackChecking()) currentSpeed = Mathf.Lerp(currentSpeed, -1.0f, 0.25f);
-        else
+        if (!BackChecking())
         {
-            print("Tes");
-            currentSpeed = Mathf.Lerp(currentSpeed, 0f, 25f);
+            if (currentSpeed > -speed)
+            {
+                currentSpeed = Mathf.Lerp(currentSpeed, -1.0f, 0.25f);
+            }
         }
+        else currentSpeed = Mathf.Lerp(currentSpeed, 0f, 25f);
+
         if (Random.Range(0, 1) == 1) _charManager._charAnim.anim.CrossFade(_charManager._charAnim.JUMP, .1f);
     }
 
@@ -311,7 +315,7 @@ public class EnemyController : CharController
     // Cek Bagian belakang kosong
     bool BackChecking()
     {
-        return Physics.CheckSphere(backCheck.position, .5f, 3);
+        return Physics.CheckSphere(backCheck.position, .5f, groundLayer);
     }
 
     // Menjaga jarak agar tidak terlalu jauh
