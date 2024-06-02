@@ -2467,7 +2467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a55394eca9fe85499f90a58e14e05b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1000
+  maxHealthDefault: 1000
   tmp: {fileID: 0}
   slider: {fileID: 974571157}
   _gameManger: {fileID: 169688702}
@@ -3566,7 +3566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f501cda6c7dc874fb98b39cf585b3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1000
+  maxHealthDefault: 1000
   tmp: {fileID: 0}
   slider: {fileID: 1914188855}
   _gameManger: {fileID: 169688702}

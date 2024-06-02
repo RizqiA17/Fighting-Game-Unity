@@ -8,7 +8,8 @@ public class Health : MonoBehaviour
 {
     protected CharManager _charManager;
     private float currentHealth;
-    [SerializeField] protected float maxHealth;
+    public float maxHealth {get; protected set; }
+    [SerializeField] protected float maxHealthDefault;
     [SerializeField] protected TextMeshProUGUI tmp;
     [SerializeField] protected Slider slider;
     [SerializeField] protected GameManager _gameManger;
@@ -26,6 +27,7 @@ public class Health : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        maxHealth = maxHealthDefault;
     }
 
     // Update is called once per frame

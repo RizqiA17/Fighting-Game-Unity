@@ -7,6 +7,7 @@ public class EnemyHealth : Health
     // Start is called before the first frame update
     void Start()
     {
+        maxHealth = maxHealthDefault;
         _charManager = GetComponent<CharManager>();
         CurrentHealth = maxHealth;
         slider.value = CurrentHealth / maxHealth;

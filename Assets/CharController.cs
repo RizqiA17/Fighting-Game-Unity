@@ -41,10 +41,10 @@ public class CharController : MonoBehaviour
     [SerializeField] protected Transform[] attackPoint; // Posisi Serangan
     [SerializeField] protected float attackRadius; // Radius Serangan
     [SerializeField] protected int minDamage, maxDamage; // Set minmax Damage
-    public float totalAttack;
-    public float rasioAttack;
-    public float attackSuccess;
-    public int attackChain;
+    public float totalAttack; // Total Input Serangan
+    public float rasioAttack; // Rasio antara serangan berhasil dengan total serangan
+    public float attackSuccess; // Total serangan berhasil
+    public int attackChain; // Serangan berhasil terus menerus
     public float RasioAttack
     {
         get => rasioAttack;
@@ -60,16 +60,6 @@ public class CharController : MonoBehaviour
     protected Vector3 charCenter; // Lokasi Character Controller Relative dengan Game Object
     [SerializeField] protected float characterControllerHeightOnDucking; // Ketinggian Saat Menunduk
     [SerializeField] protected float characterControllerYOffset; // Lokasi Character Controller Saat Menunduk
-
-
-    // Start is called before the first frame update
-    //void Start()
-    //{
-    //    charController = GetComponent<CharacterController>(); // Set Character Controller
-    //    charHeight = charController.height; // Set Tinggi Default Character Controller
-    //    charCenter = charController.center; // Set Lokasi Default Character Controller
-    //    _charManager = GetComponent<CharManager>(); // Set Character Manager        
-    //}
 
     // Update is called once per frame
     void Update()

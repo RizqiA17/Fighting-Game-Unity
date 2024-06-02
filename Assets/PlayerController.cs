@@ -12,7 +12,7 @@ public class PlayerController : CharController
         charHeight = charController.height; // Set Tinggi Default Character Controller
         charCenter = charController.center; // Set Lokasi Default Character Controller
         _charManager = GetComponent<CharManager>(); // Set Character Manager   
-        RasioAttack = 0;
+        RasioAttack = 0; // Set Rasio Attack 0
     }
 
     // Update is called once per frame
