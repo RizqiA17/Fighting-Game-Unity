@@ -5903,7 +5903,6 @@ MonoBehaviour:
       m_Calls: []
   m_text: '- Team -
 
-
     Animation - Ardiyan Nur Zahra
 
     Game - Rizqi Asyriansyah
@@ -5912,25 +5911,25 @@ MonoBehaviour:
     -
     Asset -
 
-
     Terrain - Dmitrii Kutsenko - Unity Asset Store
 
-    Button - Brush
-    Png - Google
+    Sky Box - BG
+    Studio - Unity Asset Store
+
+    Button - Brush Png - Google
 
 
-    - Thanks To -
-
+    - Thanks To
+    -
 
     Tuhan YME
 
-    Adrial Guntur Aris S -
-    Setya Budi Arif Prabowo
+    Adrial Guntur Aris S - Setya Budi Arif Prabowo
 
-    Video Youtube - Stackoverflow
+    Video
+    Youtube - Stackoverflow
 
-    Pihak pihak yang
-    mendukung
+    Pihak pihak yang mendukung
 
 '
   m_isRightToLeft: 0

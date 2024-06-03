@@ -27,10 +27,10 @@ public class EnemyController : CharController
     [SerializeField] private float minimumDistance; // Minimum jarak dengan player
     [SerializeField] private float distanceToPlayer; // Jarak dengan player
     [SerializeField] private float cdChangeState; // Cooldown ganti state
+    [SerializeField] private int state; // state untuk gerakan
     private float currentSpeed; // kecepatan x
     [Range(0, 100)]
     private int fearPoint; // poin untuk kondisi
-    [SerializeField] private int state; // state untuk gerakan
     private int minFear, minNormal; // Minimal untuk Kondisi Fear dan normal
 
     [Header("Enemy Attack")]
